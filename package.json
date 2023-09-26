@@ -1,0 +1,148 @@
+{
+  "author": "Nicolas Garcia",
+  "description": "This module allows you to convert a number to words.",
+  "description_lang": {
+    "es": "Este módulo te permite convertir un número a palabras.",
+    "en": "This module allows you to convert a number to words.",
+    "pr": "Este módulo permite converter um número em palavras."
+  },
+  "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "http://rocketbot.com/",
+  "linux": true,
+  "windows": true,
+  "mac": true,
+  "docker": false,
+  "name": "number2words",
+  "dependencies": {
+    "num2words": "0.5.12",
+    "docopt": "0.6.2"
+  },
+  "title": {
+    "en": "number2words",
+    "es": "number2words",
+    "pr": "number2words"
+  },
+  "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFZSURBVHic7dmxahRBAAbgL+cFi+AD2CZlbMQmhahgYZUqEEgR8AEEy4CF8Rl8AgvfwEYrsUltoRDTBRLSJRIkYqMp5tpTnNvbyV3+Dxa22B3+mZ1i/10iIiIiIiLi+rlRed8A9zHEWXdxZsNtfMMfvGobZXKDintO8Rz7HWdpomYBfuG9sgP+5dPouj6Pj/8zmZoFmCvDKY//cMrjT2ySHfABX7sKEhEREb2rbYN3lTZ4ge/dxZkNWzjBgbIAq23j9G8JN7GIH3jWNk47G/iNO3+5Zm7b4BO8xS6+VI4xs9bxE5+xg0dN00yopg6v4N3o/B6Ou4sTERERPappgwOsKe8A50ofuFa2cYRDZfIrbeP0bxEL2FTKx4O2cdp4o0x+T6nG48xtG3yqbP1lvKgc40qoKUOPlQZ4jlvKV6Fxrvy/wZoFuFCe/hJe4nWniSIiIiIiIiJi2i4BVSuBumT2FsoAAAAASUVORK5CYII=",
+  "children": [
+    {
+      "en": {
+        "title": "Number to words",
+        "description": "This command allows you to convert a number to words.",
+        "title_options": "Select Option",
+        "options": null
+      },
+      "es": {
+        "title": "Numero a palabras",
+        "description": "Este comando te permite convertir un numero a palabras.",
+        "title_options": "Seleccione una opción",
+        "options": null
+      },
+      "pr": {
+        "title": "Número para palavras",
+        "description": "Este comando permite converter um número em palavras.",
+        "title_options": "Selecione uma opção",
+        "options": null
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "input",
+            "placeholder": "1000",
+            "title": {
+              "es": "Numero a convertir",
+              "en": "Number to be converted",
+              "pr": "Número para converter"
+            },
+            "description": {
+              "es": "Numero a convertir a palabras",
+              "en": "Number to be converted to words",
+              "pr": "Número para converter em palavras"
+            },
+            "id": "number",
+            "css": "col-md-6",
+            "data_type": "int",
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "select",
+            "placeholder": {
+              "es": "Spanish",
+              "en": "English",
+              "pr": "Portuguese"
+            },
+            "title": {
+              "es": "Idioma de salida",
+              "en": "Output language",
+              "pr": "Idioma de saida"
+            },
+            "options": [
+              {
+                "title": "Spanish",
+                "value": "es"
+              },
+              {
+                "title": "English",
+                "value": "en"
+              },
+              {
+                "title": "Portuguese",
+                "value": "pt_BR"
+              }
+            ],
+            "description": {
+              "es": "Idioma que tendrá el número convertido",
+              "en": "Language that the converted number will have",
+              "pr": "Idioma que o número convertido terá"
+            },
+            "id": "language",
+            "css": "col-md-6",
+            "data_type": "str",
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "input",
+            "placeholder": "result",
+            "title": {
+              "es": "Resultado",
+              "en": "Result",
+              "pr": "Resultado"
+            },
+            "description": {
+              "es": "Variable donde se guardara el resultado",
+              "en": "Variable where the result will be saved",
+              "pr": "Variável onde o resultado será salvo"
+            },
+            "help": {
+              "es": "Variable donde se guardará el resultado sin {}",
+              "en": "Variable where the result will be saved without {}",
+              "pr": "Variável onde o resultado será salvo sem {}"
+            },
+            "remove_vars": true,
+            "id": "result",
+            "css": "col-md-6",
+            "data_type": "str",
+            "default": null,
+            "required": true
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB2AAAAdgB+lymcgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFZSURBVHic7dmxahRBAAbgL+cFi+AD2CZlbMQmhahgYZUqEEgR8AEEy4CF8Rl8AgvfwEYrsUltoRDTBRLSJRIkYqMp5tpTnNvbyV3+Dxa22B3+mZ1i/10iIiIiIiLi+rlRed8A9zHEWXdxZsNtfMMfvGobZXKDintO8Rz7HWdpomYBfuG9sgP+5dPouj6Pj/8zmZoFmCvDKY//cMrjT2ySHfABX7sKEhEREb2rbYN3lTZ4ge/dxZkNWzjBgbIAq23j9G8JN7GIH3jWNk47G/iNO3+5Zm7b4BO8xS6+VI4xs9bxE5+xg0dN00yopg6v4N3o/B6Ou4sTERERPappgwOsKe8A50ofuFa2cYRDZfIrbeP0bxEL2FTKx4O2cdp4o0x+T6nG48xtG3yqbP1lvKgc40qoKUOPlQZ4jlvKV6Fxrvy/wZoFuFCe/hJe4nWniSIiIiIiIiJi2i4BVSuBumT2FsoAAAAASUVORK5CYII=",
+      "module": "num2words",
+      "module_name": "number2words",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": true,
+      "windows": true,
+      "mac": true,
+      "docker": false
+    }
+  ]
+}

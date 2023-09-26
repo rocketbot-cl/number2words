@@ -2,8 +2,9 @@
   
 This module allows you to convert a number to words.  
 
-*Read this in other languages: [English](README.md), [Português](README.pr.md), [Español](README.es.md)*
-
+*Read this in other languages: [English](Manual_number2words.md), [Português](Manual_number2words.pr.md), [Español](Manual_number2words.es.md)*
+  
+![banner](imgs/Banner_number2words.jpg)
 ## How to install this module
   
 To install the module in Rocketbot Studio, it can be done in two ways:
@@ -11,25 +12,13 @@ To install the module in Rocketbot Studio, it can be done in two ways:
 2. Automatic: When entering Rocketbot Studio on the right margin you will find the **Addons** section, select **Install Mods**, search for the desired module and press install.  
 
 
-## Overview
+## Description of the commands
 
-
-1. Number to words  
-This command allows you to convert a number to words.  
-
-
-
-
-----
-### OS
-
-- windows
-- mac
-- linux
-
-### Dependencies
-- [**num2words**](https://pypi.org/project/num2words/)- [**docopt**](https://pypi.org/project/docopt/)
-### License
+### Number to words
   
-![MIT](https://camo.githubusercontent.com/107590fac8cbd65071396bb4d04040f76cde5bde/687474703a2f2f696d672e736869656c64732e696f2f3a6c6963656e73652d6d69742d626c75652e7376673f7374796c653d666c61742d737175617265)  
-[MIT](http://opensource.org/licenses/mit-license.ph)
+This command allows you to convert a number to words.
+|Parameters|Description|example|
+| --- | --- | --- |
+|Number to be converted|Number to be converted to words|1000|
+|Output language|Language that the converted number will have|English|
+|Result|Variable where the result will be saved|result|
